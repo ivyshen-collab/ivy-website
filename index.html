@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Ivy Shen — Customer Success, Perxona</title>
+<meta name="description" content="Ivy Shen 的個人網站。外文系與傳播所背景，現任 Perxona Customer Success，專注於 AI 虛擬人產品的客戶溝通與夥伴經營。">
+<link rel="canonical" href="https://ivyshen-collab.github.io/ivy-website/">
+
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Ivy Shen — Customer Success, Perxona">
+<meta property="og:description" content="外文系與傳播所背景，現任 Perxona Customer Success，專注於 AI 虛擬人產品的客戶溝通與夥伴經營。">
+<meta property="og:url" content="https://ivyshen-collab.github.io/ivy-website/">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%23f6f2ea'/%3E%3Ctext x='50' y='68' font-size='60' font-family='Georgia,serif' fill='%23b5563c' text-anchor='middle'%3EI%3C/text%3E%3C/svg%3E">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@500;700&family=Noto+Sans+TC:wght@400;500;700&display=swap">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Ivy Shen",
+  "jobTitle": "Customer Success",
+  "worksFor": { "@type": "Organization", "name": "Perxona" },
+  "description": "外文系與傳播所背景，現任 Perxona Customer Success，專注於 AI 虛擬人產品的客戶溝通與夥伴經營。",
+  "sameAs": ["https://www.linkedin.com/in/ivy-shen-dfll-comm"]
+}
+</script>
+
+<style>
+  :root{
+    --ink:#1c1a17;
+    --paper:#f6f2ea;
+    --paper-2:#efe9dd;
+    --line:#c9c0b0;
+    --muted:#7a7264;
+    --accent:#b5563c;
+    --max:1180px;
+  }
+
+  *,*::before,*::after{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:"Noto Sans TC","PingFang TC",system-ui,sans-serif;
+    -webkit-font-smoothing:antialiased;
+    text-wrap:pretty;
+  }
+  img,svg,video{max-width:100%;display:block}
+  a{color:inherit}
+  h1,h2,h3{font-family:"Noto Serif TC","Noto Sans TC",serif;text-wrap:balance;margin:0}
+  :focus-visible{outline:2px solid var(--accent);outline-offset:4px}
+
+  .skip{position:absolute;left:-9999px;padding:12px 20px;background:var(--ink);color:var(--paper);z-index:100}
+  .skip:focus{left:12px;top:12px}
+
+  .wrap{width:min(100% - clamp(32px,8vw,112px),var(--max));margin-inline:auto}
+
+  [data-reveal]{opacity:0;transform:translateY(14px)}
+  [data-reveal].is-in{opacity:1;transform:none;transition:opacity .6s cubic-bezier(.16,1,.3,1),transform .6s cubic-bezier(.16,1,.3,1)}
+  @supports (animation-timeline: view()){
+    [data-reveal]{opacity:1;transform:none;animation:reveal linear both;animation-timeline:view();animation-range:entry 8% cover 30%}
+    @keyframes reveal{from{opacity:0;transform:translateY(14px)}}
+  }
+  @media (prefers-reduced-motion: reduce){
+    *,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+    [data-reveal]{opacity:1!important;transform:none!important}
+  }
+
+  /* header */
+  header{border-bottom:1px solid var(--line)}
+  .nav{height:72px;display:flex;align-items:center;justify-content:space-between;gap:16px;font-size:13px;letter-spacing:.04em}
+  .brand{font-family:"Noto Serif TC",serif;font-weight:700;font-size:17px;letter-spacing:.02em}
+  .nav-links{display:flex;gap:26px;list-style:none;margin:0;padding:0}
+  .nav-links a{text-decoration:none;padding:10px 2px;min-height:44px;display:inline-flex;align-items:center;border-bottom:2px solid transparent}
+  .nav-links a:hover{border-color:var(--accent)}
+
+  /* hero */
+  .hero{padding:56px 0 40px}
+  .hero-grid{display:grid;grid-template-columns:5fr 7fr;gap:52px;align-items:start}
+  .hero-photo{aspect-ratio:4/5;overflow:hidden;background:var(--paper-2)}
+  .hero-photo img{width:100%;height:100%;object-fit:cover}
+  .hero-copy{display:flex;flex-direction:column;justify-content:space-between;min-height:100%;gap:40px}
+  .eyebrow{font-size:13px;letter-spacing:.14em;color:var(--accent);font-weight:700;text-transform:uppercase}
+  .hero h1{font-size:clamp(46px,7vw,92px);line-height:.95;letter-spacing:-.03em;margin-top:14px}
+  .hero-intro{max-width:560px;font-size:19px;line-height:1.7;color:#3a352e;margin-top:22px}
+  .hero-actions{display:flex;flex-wrap:wrap;gap:16px;margin-top:28px}
+  .btn{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:12px 22px;background:var(--ink);color:var(--paper);text-decoration:none;font-size:14px;font-weight:700;letter-spacing:.02em}
+  .btn:hover{background:var(--accent)}
+  .btn.ghost{background:transparent;color:var(--ink);border:1px solid var(--ink)}
+  .btn.ghost:hover{border-color:var(--accent);color:var(--accent)}
+  .meta{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;color:var(--muted);font-size:12px;letter-spacing:.05em;border-top:1px solid var(--line);padding-top:18px}
+
+  /* section shared */
+  section{padding:96px 0}
+  .section-head h2{font-size:clamp(38px,6vw,64px);line-height:1.02;letter-spacing:-.02em}
+  .section-head p{max-width:560px;font-size:17px;line-height:1.75;color:#3a352e;margin-top:22px}
+
+  #work{background:var(--paper-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .labels{height:auto;display:flex;flex-wrap:wrap;gap:12px;margin-top:44px}
+  .labels span{font-size:14px;font-weight:700;padding:9px 4px;border-bottom:2px solid var(--accent)}
+
+  .index{margin-top:70px}
+  .index h3{font-size:12px;letter-spacing:.16em;color:var(--muted);font-weight:700;margin-bottom:6px}
+  .index-row{display:grid;grid-template-columns:56px 1fr auto;gap:16px;align-items:baseline;padding:20px 0;border-top:1px solid var(--line);font-size:18px}
+  .index-row:last-child{border-bottom:1px solid var(--line)}
+  .index-row .num{color:var(--accent);font-weight:700;font-size:14px}
+  .index-row strong{font-weight:700}
+  .index-row .role-org{display:block;font-size:14px;color:var(--muted);margin-top:4px;font-weight:400}
+  .index-row .tag{font-size:12px;color:var(--muted);letter-spacing:.05em;white-space:nowrap}
+
+  .spread{display:grid;grid-template-columns:5fr 7fr;gap:44px;padding-top:76px;align-items:center}
+  .spread-img{aspect-ratio:16/10;background:linear-gradient(135deg,#d8cdb8 0%,#b5563c 55%,#1c1a17 100%)}
+  .spread-copy h3{font-size:30px;letter-spacing:-.01em;margin-bottom:16px}
+  .spread-copy p{font-size:16px;line-height:1.75;color:#3a352e}
+  .meta-line{display:grid;grid-template-columns:110px 1fr;padding:12px 0;border-top:1px solid var(--line);font-size:14px}
+  .meta-line b{letter-spacing:.06em;color:var(--muted);font-weight:700}
+  .meta-lines{margin-top:24px}
+  .meta-lines .meta-line:last-child{border-bottom:1px solid var(--line)}
+
+  /* about */
+  .about-grid{display:grid;grid-template-columns:5fr 7fr;gap:52px;align-items:center;margin-top:56px}
+  .about-photo{aspect-ratio:4/5;overflow:hidden;background:var(--paper-2);max-width:380px}
+  .about-photo img{width:100%;height:100%;object-fit:cover}
+  .about-copy p{font-size:17px;line-height:1.8;color:#3a352e}
+  .about-copy p+p{margin-top:18px}
+  .interests{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+  .interests span{font-size:13px;border:1px solid var(--ink);padding:8px 14px}
+
+  /* contact */
+  #contact{text-align:left}
+  #contact h2{font-size:clamp(44px,8vw,110px);letter-spacing:-.03em;line-height:.98}
+  #contact .lead{max-width:560px;font-size:18px;line-height:1.75;color:#3a352e;margin-top:24px}
+  #contact .hero-actions{margin-top:34px}
+
+  footer{border-top:1px solid var(--line);padding:32px 0}
+  .foot-row{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;font-size:13px;color:var(--muted)}
+  .foot-row a{text-decoration:none;border-bottom:1px solid var(--muted)}
+  .foot-row a:hover{color:var(--accent);border-color:var(--accent)}
+
+  @media (max-width:860px){
+    .hero-grid{grid-template-columns:1fr}
+    .hero-copy{gap:28px}
+    .spread{grid-template-columns:1fr;gap:28px}
+    .about-grid{grid-template-columns:1fr}
+    .about-photo{max-width:280px}
+    .index-row{grid-template-columns:36px 1fr;row-gap:6px}
+    .index-row .tag{grid-column:2;justify-self:start}
+    .nav-links{gap:16px}
+  }
+  @media (max-width:520px){
+    .nav-links{font-size:12px}
+    .hero{padding:36px 0 28px}
+    section{padding:64px 0}
+  }
+  * { overflow-wrap: anywhere; }
+</style>
+
+<script
+  type="module"
+  src="https://cdn.perxona.ai/asia/prod/latest/widget/entry/index.js"
+></script>
+</head>
+
+<body>
+<a class="skip" href="#main">跳到主要內容</a>
+
+<header>
+  <div class="wrap nav">
+    <span class="brand">IVY SHEN</span>
+    <ul class="nav-links">
+      <li><a href="#work">經歷</a></li>
+      <li><a href="#about">關於我</a></li>
+      <li><a href="#contact">聯絡</a></li>
+    </ul>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div class="hero-photo">
+        <img src="assets/hero-primary.jpg" alt="Ivy 在露營拖車前比 Yeah" width="900" height="1125">
+      </div>
+      <div class="hero-copy">
+        <div>
+          <p class="eyebrow">Customer Success · Perxona</p>
+          <h1>哈囉，<br>我是 Ivy。</h1>
+          <p class="hero-intro">外文系與傳播所背景，現在在 Perxona 做 Customer Success，把說故事與溝通的訓練，帶進 AI 虛擬人產品的客戶端工作裡。</p>
+          <div class="hero-actions">
+            <a class="btn" href="https://www.linkedin.com/in/ivy-shen-dfll-comm" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+            <a class="btn ghost" href="#work">看我的經歷</a>
+          </div>
+        </div>
+        <div class="meta">
+          <span>TAIWAN</span>
+          <span>外文系 · 傳播所</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="work">
+    <div class="wrap">
+      <div class="section-head" data-reveal>
+        <h2>我在做的事，<br>與怎麼走到這裡。</h2>
+        <p>從語言與文本出發，一路走進傳播與內容，現在在客戶端把 AI 產品和真實的人連在一起。</p>
+        <div class="labels">
+          <span>客戶成功</span>
+          <span>客戶溝通</span>
+          <span>帳號經營</span>
+          <span>內容 / 傳播</span>
+          <span>商業開發</span>
+        </div>
+      </div>
+
+      <div class="index" data-reveal>
+        <h3>經歷與學歷</h3>
+        <div class="index-row">
+          <span class="num">01</span>
+          <div><strong>Customer Success</strong><span class="role-org">Perxona — AI 虛擬人 SaaS 產品公司</span></div>
+          <span class="tag">現職</span>
+        </div>
+        <div class="index-row">
+          <span class="num">02</span>
+          <div><strong>傳播學碩士</strong><span class="role-org">國立政治大學傳播學院</span></div>
+          <span class="tag">MA</span>
+        </div>
+        <div class="index-row">
+          <span class="num">03</span>
+          <div><strong>外國語文學系</strong><span class="role-org">學士</span></div>
+          <span class="tag">BA</span>
+        </div>
+      </div>
+
+      <article class="spread" data-reveal>
+        <div class="spread-img" role="img" aria-label="Perxona 工作示意圖"></div>
+        <div class="spread-copy">
+          <h3>在 Perxona 的工作</h3>
+          <p>Perxona 打造 AI 虛擬人相關產品，包括 Behavior AI™、Humanistic AI，以及免程式碼編輯器 StoryBoard。我的角色偏向客戶端：處理客戶溝通與帳號經營，也參與商業開發、協助拓展合作夥伴。</p>
+          <div class="meta-lines">
+            <div class="meta-line"><b>角色</b><span>Customer Success</span></div>
+            <div class="meta-line"><b>負責範疇</b><span>客戶溝通 / 帳號經營 / 商業開發</span></div>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="wrap">
+      <div class="section-head" data-reveal>
+        <h2>關於我</h2>
+      </div>
+      <div class="about-grid" data-reveal>
+        <div class="about-photo">
+          <img src="assets/about-photo.jpg" alt="Ivy 拿著麵包微笑" width="900" height="1125" loading="lazy">
+        </div>
+        <div class="about-copy">
+          <p>大學讀外文系，研究所在政大傳播學院主修傳播。一直對用故事和內容打動人很有興趣，也曾完成一部電影劇本《How to Be a Mommy Trainee》。</p>
+          <p>現在在 Perxona 擔任 Customer Success，把過去累積的溝通與內容訓練，用在 AI 虛擬人產品的客戶端工作上。</p>
+          <div class="interests">
+            <span>看電影</span>
+            <span>學新語言</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="wrap" data-reveal>
+      <h2>很高興<br>認識你。</h2>
+      <p class="lead">歡迎透過 LinkedIn 找我聊聊，不管是工作機會、合作，或單純打聲招呼都好。</p>
+      <div class="hero-actions">
+        <a class="btn" href="https://www.linkedin.com/in/ivy-shen-dfll-comm" target="_blank" rel="noopener noreferrer">在 LinkedIn 上找我 ↗</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap foot-row">
+    <span>© <span id="year"></span> Ivy Shen</span>
+    <a href="https://www.linkedin.com/in/ivy-shen-dfll-comm" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+  </div>
+</footer>
+
+<script>
+document.getElementById('year').textContent = new Date().getFullYear();
+
+const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
+const nativeScroll = CSS.supports('animation-timeline: view()');
+
+if (!reduced && !nativeScroll) {
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach((entry, i) => {
+      if (!entry.isIntersecting) return;
+      entry.target.style.transitionDelay = `${Math.min(i, 6) * 60}ms`;
+      entry.target.classList.add('is-in');
+      io.unobserve(entry.target);
+    });
+  }, { threshold: .15, rootMargin: '0px 0px -10% 0px' });
+  document.querySelectorAll('[data-reveal]').forEach(el => io.observe(el));
+} else {
+  document.querySelectorAll('[data-reveal]').forEach(el => el.classList.add('is-in'));
+}
+</script>
+
+<sv-agent
+  agentProfileId="01KEE2MJ53YB2PS9B6PDKKQNJR"
+  presentationMode="bubble"
+  apiKey="3a69b781-135a-4c0c-8099-601516b0cc9c"
+>
+</sv-agent>
+</body>
+</html>
